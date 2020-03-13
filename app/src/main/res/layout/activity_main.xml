@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/welcomescreenbg"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/welcome_background" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:srcCompat="@drawable/swooshlogo"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/app_logo" />
 
     <TextView
         android:id="@+id/textView"
@@ -78,7 +78,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/getStartedBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
