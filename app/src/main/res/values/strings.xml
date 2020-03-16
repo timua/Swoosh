@@ -13,4 +13,9 @@
     <string name="background_image">Background image</string>
     <string name="app_logo">App logo</string>
     <string name="welcome_background">Welcome Background</string>
+    <string name="skill_background">Skill Background</string>
+    <string name="i_am_a">I am a:</string>
+    <string name="beginner">BEGINNER</string>
+    <string name="baller">BALLER</string>
+    <string name="finish">FINISH</string>
 </resources>
