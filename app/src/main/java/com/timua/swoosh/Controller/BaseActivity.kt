@@ -1,4 +1,4 @@
-package com.timua.swoosh
+package com.timua.swoosh.Controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
