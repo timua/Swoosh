@@ -3,9 +3,9 @@ package com.timua.swoosh.Controller
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.timua.swoosh.Model.Player
 import com.timua.swoosh.R
-import com.timua.swoosh.Utilities.EXTRA_LEAGUE
-import com.timua.swoosh.Utilities.EXTRA_SKILL
+import com.timua.swoosh.Utilities.EXTRA_PLAYER
 import kotlinx.android.synthetic.main.activity_finish.*
 
 class FinishActivity : BaseActivity() {
@@ -14,9 +14,8 @@ class FinishActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finish)
 
-        val league = intent.getStringExtra(EXTRA_LEAGUE)
-        val skill = intent.getStringExtra(EXTRA_SKILL)
+        var player = intent.getParcelableExtra<Player>(EXTRA_PLAYER)
 
-        searchLeagueText.text = "Looking for $league $skill league near you..."
+        searchLeagueText.text = "Looking for ${player.league} ${player.skill} league near you..."
     }
 }
