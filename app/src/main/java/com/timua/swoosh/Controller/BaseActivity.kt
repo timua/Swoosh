@@ -40,4 +40,14 @@ open class BaseActivity : AppCompatActivity() {
         Log.d(TAG, "${javaClass.simpleName} OnDestroy")
         super.onDestroy()
     }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        Log.d(TAG, "${javaClass.simpleName} OnSaveInstanceState")
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        Log.d(TAG, "${javaClass.simpleName} OnRestoreInstanceState")
+        super.onRestoreInstanceState(savedInstanceState)
+    }
 }
